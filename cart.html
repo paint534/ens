@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Cart to Louis-Vuitton</title>
     <link rel="icon" type="image/x-icon" href="./promote/favicon-32x32.png">
+    <meta name="description" content="Louis Vuitton shop-cart">
 
 </head>
 <body>
@@ -536,9 +537,16 @@ body{
               </div>
 
             </div>
-            < -- paypal-->
-
-            < -- paypal-->
+            <script src="https://www.paypal.com/sdk/js?client-id=BAAK2jxOv87BSvAC4H5QPWy0G_tjVn27DHhPVSSuL3j3jrxxrhV6UMAc7GcV3TXRSMBMB3hBs6bmG9ORKo&components=hosted-buttons&disable-funding=venmo&currency=PHP" ></script>            <div id="paypal-container-FX3GGKLZSW6DJ"></div>
+            <div id="paypal-container-FX3GGKLZSW6DJ"></div>
+            <script>
+                document.addEventListener("DOMContentLoaded", (event) => {
+                  paypal.HostedButtons({
+                    hostedButtonId: "FX3GGKLZSW6DJ"
+                  })
+                  .render("#paypal-container-FX3GGKLZSW6DJ")
+                })
+            </script>
 
         </form>
 
