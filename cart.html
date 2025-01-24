@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./promote/favicon-32x32.png">
+
+</head>
+<body>
+<style>
+*{
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+    padding: 20px;
+   
+}
+
+/* width */
+::-webkit-scrollbar {
+    background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.navbars{
+    height:50px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+}
+
+.navbars .mesdhas{
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.navbars .searcshd{
+    font-size: 30px;
+    padding-top:5px;
+}
+
+.navbars .texts{
+    font-size: 30px;
+    padding-top:5px;
+}
+
+.carts-ads{
+    display: flex;
+    margin-top: 5px;
+}
+
+.carts-ads p{
+    margin-top: -1px;
+    background: red;
+    height: 12px;
+    padding: 5px;
+    border-radius: 30px;
+    width: 12px;
+    text-align: center;
+    padding-top: 1px;
+    color: white;
+}
+
+.navbars .texts{
+    font-size: 30px;
+    padding-top:5px;
+}
+
+.carts{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin: 20px;
+    gap:5px;
+}
+
+.carts .carts-produces{
+   padding: 20px;
+   height: 650px;
+}
+
+.carts #cartTableBody{
+    overflow: scroll;
+    height: 600px;
+}
+.products .items{
+     padding-top: 50px;
+     width: 100px;
+     text-decoration: none;
+     color:whitesmoke;
+}
+
+.carts-produces{
+    width: 500px;
+}
+
+.carts .products{
+    display: flex;
+    background: grey;
+    margin-top: 10px;
+    border-radius: 3px ;
+}
+
+.carts .cart-bilings{
+    width: 300px;
+    border: 1px solid rgb(201, 201, 201);
+    padding: 30px;
+    border-radius: 10px ;
+
+}
+
+.formsd  input{
+    width: 290px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+.formsd  h3{
+    margin-bottom: 40px;
+}
+#paypal-form-fields-container-7GCEVG9TGJGYU .input-label{
+    display: block;
+}
+.label{
+    margin-bottom:20px;
+}
+
+.row input{
+    width: 290px;
+    height: 20px;
+}
+
+.carts .cart-bilings #paypal-form-fields-container-7GCEVG9TGJGYU{
+    width: 300px;
+}
+
+
+#paypal-form-fields-container-ST549NU4VSWUL{
+            width: 320px;
+}
+
+#paypal-container-ST549NU4VSWUL{
+    margin: auto;
+    justify-content: center;
+}
+
+#paypal-form-fields-container-ST549NU4VSWUL .input-label{
+   display: none;
+}
+
+#checkout-button{
+    display: none;
+}
+.input-label{
+    display: none;
+}
+
+.carts-produces img{
+    width: 200px;
+}
+.cartstotals{
+    display: flex;
+}
+#paypal-form-fields-container-7GCEVG9TGJGYU label{
+    display: none;
+}
+.cartstotals{
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.cartstotals{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+    .carts .carts-produces {
+        height: 650px;
+        width: 200px;
+    }
+
+    .carts .carts-produces img{
+        padding: 10px;
+        height: 60px;
+        width: 60px;
+        padding-top: 30px;
+    }
+
+    .carts .carts-produces .items{
+        padding: 10px;
+        height: 60px;
+        width: 60px;
+        padding-top: 10px;
+    }
+
+    .carts .cart-bilings {
+        width: 250px;
+        padding: 30px;
+    }
+
+    .carts .cart-bilings input{
+        width: 230px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+
+    .carts .cart-bilings #paypal-form-fields-container-7GCEVG9TGJGYU{
+        width: 240px;
+    }
+
+    .carts #cartTableBody {
+        overflow: scroll;
+        height: 500px;
+    }
+    .carts .products .items{
+           font-size:10px;
+           color:whitesmoke
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .carts{
+        display: inline;
+        margin-right: 30px;
+    }
+    .carts .carts-produces {
+        width: 100%;
+        margin-right: -200px;
+        margin: auto;
+    }
+    .carts .cart-bilings {  
+        width: 80%;
+        justify-content: center;
+        margin: auto;
+        margin-top: -200px;
+    }
+    .carts .cart-bilings  .formsd{
+        width: 80%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .products{
+        margin-right: 20px;
+    }
+
+    .carts #cartTableBody {
+        overflow: scroll;
+        height: 300px;
+    }
+    .carts .carts-produces   .imageitems{
+      width: 100px;
+    }
+    .carts-produces {
+        height: 650px;
+        width: 600px;
+        margin: 20px;
+        margin-right: 0px;
+        margin-bottom: 130px;
+    }
+    .products  .imageitems{
+        width: 300px;
+    }
+    .products  .items{
+        width: 400px;
+    }
+    .cart-bilings{
+        width: 300px;
+        margin-top: 20px;
+    }
+    .navbars .texts {
+        font-size: 15px;
+        padding-top: 5px;
+    }
+    .products  .imageitems img{
+        width: 200px;
+        height: 200px;
+    }
+    .items{
+        width: 400px;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    .formsd input{
+        height: 100px;
+    }
+    .lv-default-layout__footer{
+        font-size: 13px;
+    }
+    .lv-default-layout__footer .lv-footer-categories__category .lv-list{
+        padding: 5px;
+    }
+    .carts .products .items{
+           font-size:13px;
+           color:whitesmoke
+    }
+    .cartstotals p{
+        font-size: 14px;
+    }
+     
+
+}
+
+.lv-default-layout__footer{ 
+        display:flex;  
+        justify-content: space-around; 
+        border-bottom: 1px solid grey; 
+        border-top: 1px solid grey; 
+        padding-top: 40px; 
+} 
+ .lv-list .lv-footer-categories-detail__item{ 
+        list-style-type: none; 
+        color: black; 
+}  
+ .lv-footer-categories-detail__item li  { 
+        color:rgb(0, 0, 0); 
+        list-style-type: none; 
+        padding-top: 20px; 
+} 
+.lv-footer-categories-detail__item a { 
+        color: black; 
+        padding-top: 20px; 
+} 
+.lv-footer-categories-detail__item{
+    padding: 10px;
+}
+.text-footer-2{
+    padding:20px;
+    text-align: center;
+}
+.text-sts{
+    display: flex;
+    justify-content: space-around;
+}
+.text-footer-2 .txts{
+     display: flex;
+}
+.text-footer-2.text-footer{
+    padding-top: 20px;
+    display: flex;
+}
+.text-footer-2 .text-footer {
+    padding-top: 20px;
+    
+}
+.titlesd{
+     margin-top:120px;
+     color:rgb(0, 0, 0);
+     text-decoration: none;       
+     padding-top: 100px;      
+}
+.text-footer-2 a{
+      padding-top: 100px;     
+}
+
+.mylinks{
+    display: inline-table;
+    height: 500px;
+    background-color: #000000b6;
+    margin-top: 20px;
+    display: none;
+    width: 280px;
+    padding-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.mylinks a{ 
+    display: flex;
+    margin-top: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.mylinks a:hover{ 
+    background: rgba(156, 57, 140, 0.253);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.classmenus{
+    width: 20px;
+    color: rgba(0, 0, 0, 0.651);
+}
+           
+.cartstotals p{
+    font-size: 20px;
+}
+.buttons button{
+    border:1px solid transparent;
+    background: transparent;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.buttons button:hover{
+    color:red;
+}
+
+        
+</style>
+
+<nav class="navbars">
+
+    <div class="mesdhas">
+
+        <div class="classmenus">
+
+            <div onclick="myFunction()">
+                &#9783;
+            </div> 
+
+            <div class="mylinks" id="myLinks">
+                <a href="/ens/">Home Store</a>
+                <a href="/ens/Colection.html">Hanbag And Shoderbag WOMEN</a>
+                <a href="/en/">Hanbag And Shoderbag MEN</a>
+            </div>
+
+        </div>
+
+        <div class="searcshd" style="display:none;"> 
+            <svg width="24" data-e2e="" height="24" viewBox="0 0 48 48" fill="black" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M22 10C15.3726 10 10 15.3726 10 22C10 28.6274 15.3726 34 22 34C28.6274 34 34 28.6274 34 22C34 15.3726 28.6274 10 22 10ZM6 22C6 13.1634 13.1634 6 22 6C30.8366 6 38 13.1634 38 22C38 25.6974 36.7458 29.1019 34.6397 31.8113L43.3809 40.5565C43.7712 40.947 43.7712 41.5801 43.3807 41.9705L41.9665 43.3847C41.5759 43.7753 40.9426 43.7752 40.5521 43.3846L31.8113 34.6397C29.1019 36.7458 25.6974 38 22 38C13.1634 38 6 30.8366 6 22Z">
+              </path>
+            </svg>
+        </div> 
+     
+    </div> 
+
+    <div class="texts">
+
+        <img style="height: 20px;"  src="./promote/favicon-32x32.png" alt="" srcset="">
+             LOUIS VUTTION 
+
+    </div>
+
+    <div class="texts-cart" >
+
+        <a href ="./cart.html" class="carts-ads">
+            <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 902.86 902.86" xml:space="preserve" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                <g>
+                <g> 
+                    <path d="M671.504,577.829l110.485-432.609H902.86v-68H729.174L703.128,179.2L0,178.697l74.753,399.129h596.751V577.829z M685.766,247.188l-67.077,262.64H131.199L81.928,246.756L685.766,247.188z"></path>
+                    <path d="M578.418,825.641c59.961,0,108.743-48.783,108.743-108.744s-48.782-108.742-108.743-108.742H168.717 c-59.961,0-108.744,48.781-108.744,108.742s48.782,108.744,108.744,108.744c59.962,0,108.743-48.783,108.743-108.744 c0-14.4-2.821-28.152-7.927-40.742h208.069c-5.107,12.59-7.928,26.342-7.928,40.742 C469.675,776.858,518.457,825.641,578.418,825.641z M209.46,716.897c0,22.467-18.277,40.744-40.743,40.744 c-22.466,0-40.744-18.277-40.744-40.744c0-22.465,18.277-40.742,40.744-40.742C191.183,676.155,209.46,694.432,209.46,716.897z M619.162,716.897c0,22.467-18.277,40.744-40.743,40.744s-40.743-18.277-40.743-40.744c0-22.465,18.277-40.742,40.743-40.742 S619.162,694.432,619.162,716.897z"></path>
+               </g> 
+               </g> 
+               </g>
+            </svg>
+        </a>
+
+    </div>
+
+
+</nav>
+
+
+
+<div class="carts"> 
+
+
+    <div class="carts-produces">
+
+        <div class="buttons">
+            <button onclick="history.back(-1)"> &#128896;  Back</button>
+         </div>
+
+         <div class="buttons">
+             <button onclick="emptyCart()"> Delete All</button>
+         </div>
+
+         <div>
+            Doble check your address before check out thanks 
+         </div>
+
+        <div id="cartTableBody">
+
+        </div>
+
+        <div class="cartstotals" style="display: flex;">
+            <p>Total:$</p>
+            <p id="totalAmount"></p>
+       </div>
+
+
+    </div>
+
+
+    <div class="cart-bilings">
+
+         <form action="" class="formsd">
+
+            <h3>Billing Address</h3>
+
+            <div class="cartstotals">
+                <p>Total all: $</p>
+                <p id="totaltoallcarts"></p>
+            </div>
+
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe"><br>
+            <label for="email"><i class="fa fa-envelope"></i> Email</label><br>
+            <input type="text" id="email" name="email" placeholder="john@example.com"><br>
+
+            <label for="adr"><i class="fa fa-address-card-o"></i>Phone Number</label><br>
+            <input type="Number" id="adr" name="Number" placeholder="Number"><br>
+
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label><br>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street"><br>
+            <label for="city"><i class="fa fa-institution"></i> City</label><br>
+            <input type="text" id="city" name="city" placeholder="New York"><br>
+
+            <div class="row">
+
+              <div>
+                <label for="state">State</label><br>
+                <input  class="state" type="text" id="state" name="state" placeholder="NY">
+              </div>
+
+              <div>
+                <label for="zip">Zip</label><br>
+                <input class="zip"  type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+
+            </div>
+            
+            <script src="https://www.paypal.com/sdk/js?client-id=BAASnsP_kKUwNIGdHA-5-md07GoBJ00Js11XPAjtwcDUQOccbVDkE978ZwOd01D12B5JZO2KE8bbq388ig&components=hosted-buttons&disable-funding=venmo&currency=PHP" ></script>
+            <div id="paypal-container-7GCEVG9TGJGYU"></div>
+                
+            <script>
+                document.addEventListener("DOMContentLoaded", (event) => {
+                    
+                    paypal.HostedButtons({
+                         hostedButtonId: "7GCEVG9TGJGYU"
+                    })
+            
+                    .render("#paypal-container-7GCEVG9TGJGYU")
+            
+            
+                })
+            </script>
+
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<footer role="contentinfo" class="lv-default-layout__footer" style="height: 100px;">
+
+    <section aria-labelledby="footerCategoryTitle_0" class="lv-footer-categories__category">
+  
+        <ul class="lv-list">
+
+
+
+           <li class="lv-footer-categories-detail__item">
+             <div class="lv-footer-categories-detail__text body-s">
+                 <a href="/ens/contact-and-email.html">
+                     call  or email
+                 </a> 
+             </div>
+            </li>
+
+            <li class="lv-footer-categories-detail__item">
+                 <a href="/ens/" class="lv-smart-link lv-footer-categories-detail__link list-label-s"><!---->
+                       Stores
+                  </a>
+            </li>
+
+        </ul>
+    </section>
+            
+    <section aria-labelledby="footerCategoryTitle_1" class="lv-footer-categories__category">
+    
+            <ul class="lv-list">
+    
+    
+                <li class="lv-footer-categories-detail__item">
+
+                    <a href="/ens/art.html" class="lv-smart-link lv-footer-categories-detail__link list-label-s"><!---->
+                      Art of Gifting
+                    </a>
+
+                </li>
+
+                <li class="lv-footer-categories-detail__item">
+                    <a href="" class="lv-smart-link lv-footer-categories-detail__link list-label-s"><!---->
+                      Download our Apps
+                    </a>
+                </li>
+
+            </ul>
+    </section>
+    
+    <section aria-labelledby="footerCategoryTitle" class="lv-footer-categories__category">
+     
+          <ul class="lv-list">
+            
+    
+            <li class="lv-footer-categories-detail__item">
+                 <a href="/ens/Fashion-Show.html" class="lv-smart-link lv-footer-categories-detail__link list-label-s"><!---->
+                    Fashion Shows
+                  </a>
+            </li>
+
+            <li class="lv-footer-categories-detail__item">
+
+                <a href="/ens/Art.html" class="lv-smart-link lv-footer-categories-detail__link list-label-s"><!---->
+                    Arts &amp; Culture
+                  </a>
+            </li>
+
+          </ul>
+    
+    </section>
+                     
+</footer>   
+
+<div class="text-footer-2">
+
+    <div class="text-sts">
+
+        <div class="txts">
+            ENGLISH (INTL)
+        </div>
+
+        <div class="txts" style="margin-top: -100px; color:black">
+            <a href="/ens/legal.html" style="color:black;" >
+                Sitemap
+                Legal & privacy
+                Cookies
+            </a>
+         </div>
+
+    </div>
+
+    <div class="text-footer">
+
+        <div class="text-footer">
+            <img style="height: 40px;"  src="/paypal/promote/apple-touch-icon.png" alt="" srcset="">
+            <a class="titlesd" style="padding-top:200px;" href="" >LOUIS VUTTION </a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+</script>
+
+<script>  
+
+function  emptyCart(){
+
+    if (sessionStorage.getItem('shopping-cart')) {
+        sessionStorage.removeItem('shopping-cart');
+        showCartTable();
+    }
+
+     window.location.reload()
+
+}
+
+</script>
+
+<script src="/ens/src/carts.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</body>
+</html>
